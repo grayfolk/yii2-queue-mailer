@@ -37,7 +37,7 @@ class Mailer extends Component implements MailerInterface {
         return $this->getSyncMailer()->compose($view, $params);
     }
 
-    public function send(MessageInterface $message) {
+    public function send($message) {
         $message = Instance::ensure($message, MessageInterface::class);
 
         $this->queue->push(new SendMessageJob([
@@ -45,7 +45,7 @@ class Mailer extends Component implements MailerInterface {
         ]));
     }
 
-    public function sendMultiple(Array $messages) {
+    public function sendMultiple($messages) {
         foreach ($messages as $message) {
             $message = Instance::ensure($message, MessageInterface::class);
         }
