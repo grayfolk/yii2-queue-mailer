@@ -5,7 +5,7 @@
  * @author Syakur Rahman <shaqman2004@yahoo.com>
  */
 
-namespace eto\yii2\queuemailer\jobs;
+namespace eto\mailer\queuemailer\jobs;
 
 use eto\yii2\queuemailer\Mailer;
 use yii\di\Instance;

@@ -1,5 +1,5 @@
 {
-    "name": "eto/yii2-queue-mailer",
+    "name": "shaqman/yii2-queue-mailer",
     "description": "Background mailer decorator for Yii2",
     "type": "yii2-extension",
     "keywords": [
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "eto\\yii2\\queuemailer\\": "./src"
+            "shaqman\\mailer\\queuemailer\\": "./src"
         }
     }
 }

@@ -5,7 +5,7 @@
  * @author Syakur Rahman <shaqman2004@yahoo.com>
  */
 
-namespace eto\yii2\queuemailer;
+namespace eto\mailer\queuemailer;
 
 use eto\yii2\queuemailer\jobs\SendMessageJob;
 use eto\yii2\queuemailer\jobs\SendMultipleMessagesJob;
