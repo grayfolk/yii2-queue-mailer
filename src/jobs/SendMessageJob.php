@@ -9,6 +9,7 @@ namespace shaqman\mailer\queuemailer\jobs;
 
 use shaqman\mailer\queuemailer\Mailer;
 use yii\di\Instance;
+use yii\base\Object;
 use \yii\queue\Job;
 use yii\mail\MessageInterface;
 
