@@ -45,7 +45,7 @@ class Mailer extends Component implements MailerInterface {
         ]));
     }
 
-    public function sendMultiple($messages) {
+    public function sendMultiple(array $messages) {
         foreach ($messages as $message) {
             $message = Instance::ensure($message, MessageInterface::class);
         }
