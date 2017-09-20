@@ -7,8 +7,8 @@
 
 namespace shaqman\mailer\queuemailer;
 
-use shaqman\yii2\queuemailer\jobs\SendMessageJob;
-use shaqman\yii2\queuemailer\jobs\SendMultipleMessagesJob;
+use shaqman\mailer\queuemailer\jobs\SendMessageJob;
+use shaqman\mailer\queuemailer\jobs\SendMultipleMessagesJob;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\mail\MailerInterface;
