@@ -1,5 +1,5 @@
 {
-    "name": "bluespy/yii2-queue-mailer",
+    "name": "eto/yii2-queue-mailer",
     "description": "Background mailer decorator for Yii2",
     "type": "yii2-extension",
     "keywords": [
@@ -8,7 +8,7 @@
         "mailer",
         "queue"
     ],
-    "homepage": "https://github.com/bluespy/yii2-queue-mailer",
+    "homepage": "https://github.com/shaqman/yii2-queue-mailer",
     "license": "MIT",
     "authors": [
         {
@@ -23,8 +23,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/bluespy/yii2-queue-mailer/issues",
-        "source": "https://github.com/bluespy/yii2-queue-mailer"
+        "issues": "https://github.com/shaqman/yii2-queue-mailer/issues",
+        "source": "https://github.com/shaqman/yii2-queue-mailer"
     },
     "require": {
         "yiisoft/yii2": "~2",
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "eto\\yii2\\queue-mailer\\": "./src"
+            "eto\\yii2\\queuemailer\\": "./src"
         }
     }
 }

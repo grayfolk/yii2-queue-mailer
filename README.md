@@ -1,4 +1,4 @@
-# bluespy/yii2-queue-mailer
+# shaqman/yii2-queue-mailer
 Background mailer for Yii2 using [yii2 queue extension](https://github.com/yiisoft/yii2-queue/).
 
 ## Installation
@@ -8,13 +8,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist bluespy/yii2-queue-mailer
+php composer.phar require --prefer-dist shaqman/yii2-queue-mailer
 ```
 
 or add
 
 ```json
-"bluespy/yii2-queue-mailer": "*"
+"shaqman/yii2-queue-mailer": "*"
 ```
 
 ## Usage
