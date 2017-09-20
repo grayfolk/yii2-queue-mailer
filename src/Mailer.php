@@ -34,7 +34,7 @@ class Mailer extends Component implements MailerInterface {
     }
 
     public function compose($view = null, array $params = []) {
-        return $this->getSyncMailer()->compose($view, $params);
+        return $this->syncMailer->compose($view, $params);
     }
 
     public function send($message) {
