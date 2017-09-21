@@ -23,9 +23,9 @@ class SendMessageJob extends Object implements Job {
 
     public function execute($queue) {
         $this->mailer = Instance::ensure($this->mailer, Mailer::class);
-        $this->message = Instance::ensure($this->messsage, MessageInterface::class);
+        $this->message = Instance::ensure($this->message, MessageInterface::class);
 
-        return $this->message->send($this->mailer);
+        $this->message->send($this->mailer->syncMailer);
     }
 
 }
