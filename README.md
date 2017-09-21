@@ -44,7 +44,9 @@ $message = \Yii::$app->mailer->compose()
   ->setSubject('test subject')
   ->setFrom('test@example.org')
   ->setHtmlBody('test body')
-  ->setTo('user@example.org');
-
-\Yii::$app->mailer->send($message);
+  ->setTo('user@example.org')
+  ->send($message);
 ```
+
+One small difference should be noted compared to the default `send`. It now returns an `int` identifying the queue id that the mail was assigned to.
+This is to be expected since there is no way to know whether the mail was successfully sent at the time of the command was executed.
