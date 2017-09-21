@@ -34,14 +34,14 @@ class Mailer extends Component implements MailerInterface {
     }
 
     public function compose($view = null, array $params = []) {
-        return $this->syncMailer->compose($view, $params);
+        $message = $this->syncMailer->compose($view, $params);
+        $message->mailer = $this;
+        return $message;
     }
 
     public function send($message) {
-        $message = Instance::ensure($message, MessageInterface::class);
-
-        $this->queue->push(new SendMessageJob([
-            'message' => Instance::ensure($message, MessageInterface::class),
+        return $this->queue->push(new SendMessageJob([
+                    'message' => Instance::ensure($message, MessageInterface::class),
         ]));
     }
 
