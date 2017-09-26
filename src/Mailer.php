@@ -22,6 +22,23 @@ class Mailer extends Component implements MailerInterface {
     public $syncMailer;
     public $queue = 'queue';
 
+    public function __set($name, $value) {
+        if (property_exists($this->syncMailer, $name)) {
+            $this->syncMailer->$name = $value;
+            return;
+        }
+
+        parent::__set($name, $value);
+    }
+
+    public function __get($name) {
+        if (property_exists($this->syncMailer, $name)) {
+            return $this->syncMailer->$name;
+        }
+
+        return parent::__get($name);
+    }
+
     public function init() {
         parent::init();
 
