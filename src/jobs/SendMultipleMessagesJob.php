@@ -8,12 +8,12 @@
 namespace shaqman\mailer\queuemailer\jobs;
 
 use shaqman\mailer\queuemailer\Mailer;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\di\Instance;
 use \yii\queue\Job;
 use yii\mail\MessageInterface;
 
-class SendMultipleMessagesJob extends Object implements Job {
+class SendMultipleMessagesJob extends BaseObject implements Job {
 
     /** @var MessageInterface */
     public $messages;
