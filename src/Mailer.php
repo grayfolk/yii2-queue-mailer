@@ -21,6 +21,11 @@ class Mailer extends Component implements MailerInterface {
     /** @var MailerInterface */
     public $syncMailer;
     public $queue = 'queue';
+	public $viewPath;
+    
+    public function getView(){
+        return \Yii::$app->view;
+    }
 
     public function __set($name, $value) {
         if (property_exists($this->syncMailer, $name)) {

@@ -1,5 +1,5 @@
 {
-    "name": "shaqman/yii2-queue-mailer",
+    "name": "grayfolk/yii2-queue-mailer",
     "description": "Background mailer decorator for Yii2",
     "type": "yii2-extension",
     "keywords": [
@@ -8,7 +8,7 @@
         "mailer",
         "queue"
     ],
-    "homepage": "https://github.com/shaqman/yii2-queue-mailer",
+    "homepage": "https://github.com/grayfolk/yii2-queue-mailer",
     "license": "MIT",
     "authors": [
         {
@@ -23,8 +23,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/shaqman/yii2-queue-mailer/issues",
-        "source": "https://github.com/shaqman/yii2-queue-mailer"
+        "issues": "https://github.com/grayfolk/yii2-queue-mailer/issues",
+        "source": "https://github.com/grayfolk/yii2-queue-mailer"
     },
     "require": {
         "yiisoft/yii2": "~2.0.13",
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "shaqman\\mailer\\queuemailer\\": "./src"
+            "grayfolk\\mailer\\queuemailer\\": "./src"
         }
     }
 }
