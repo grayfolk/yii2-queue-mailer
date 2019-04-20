@@ -5,9 +5,9 @@
  * @author Syakur Rahman <shaqman2004@yahoo.com>
  */
 
-namespace shaqman\mailer\queuemailer\jobs;
+namespace grayfolk\mailer\queuemailer\jobs;
 
-use shaqman\mailer\queuemailer\Mailer;
+use grayfolk\mailer\queuemailer\Mailer;
 use yii\base\BaseObject;
 use yii\di\Instance;
 use \yii\queue\Job;

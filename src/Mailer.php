@@ -5,10 +5,10 @@
  * @author Syakur Rahman <shaqman2004@yahoo.com>
  */
 
-namespace shaqman\mailer\queuemailer;
+namespace grayfolk\mailer\queuemailer;
 
-use shaqman\mailer\queuemailer\jobs\SendMessageJob;
-use shaqman\mailer\queuemailer\jobs\SendMultipleMessagesJob;
+use grayfolk\mailer\queuemailer\jobs\SendMessageJob;
+use grayfolk\mailer\queuemailer\jobs\SendMultipleMessagesJob;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\mail\MailerInterface;
